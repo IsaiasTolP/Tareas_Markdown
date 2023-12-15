@@ -21,7 +21,8 @@ Escogeremos el lenguaje de programación con el que nos sintamos más cómodos, 
 ## Pruebas
 Cuando se trata de desarrollo de software y más cuando se trabaja en grupo, debemos tener en cuenta que antes de entregarle un producto al usuario final debemos cerciorarnos de que todo funcione en conjunto de forma correcta, para ello tenemos las pruebas:
 ### Pruebas unitarias
-
+Una prueba unitaria sería aquella que se hace de forma aislada, sobre una parte del software, por ejemplo una clase o una función. Al realizarlos de esta manerea, si nuestro programa tiene un problema justo en ese lugar lo podremos encontrar de forma más rápida, ya que no hace falta revisar todo el software, solo una parte. Nos permiten evitar arrastrar errores.
 ### Pruebas de integración
+Una prueba de integración es una que se hace sobre todo el programa, es una prueba muy importante, sobre todo si somos varios trabajando en el equipo, pues a la hora de juntar todo el trabajo se pueden producir problemas que por separado (En las pruebas unitarias) no habríamos podido ver, por ejemplo al interactuar diferentes partes que se hicieron por separado el programa puede que funcione de una forma no deseada o que direcamente ni lo haga.
 
 </div>
