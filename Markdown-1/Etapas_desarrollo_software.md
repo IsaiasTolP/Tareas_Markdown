@@ -2,6 +2,9 @@
 
 # <div align="center">Etapas de desarrollo del software</div>
 
+## Es recomendable ver este video:
+[![Vídeo fases de desarrollo](https://i.ytimg.com/vi/bVMQQNjygoA/maxresdefault.jpg)](https://youtu.be/bVMQQNjygoA?si=tFyMoy2KEUOCOFb6)
+
 ## Análisis de requisitos:
 
 ### Los requisitos funcionales
