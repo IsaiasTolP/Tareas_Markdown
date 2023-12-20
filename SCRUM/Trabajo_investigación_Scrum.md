@@ -47,6 +47,25 @@ Su trabajo conjunto realizado a principio de los años 80, analizó el desarroll
 3. Desarrollador: Son cada uno de los individuos que se encarga de realizar el trabajo de desarrollo.
 4. Stakeholder (Clientes, Proveedores, Vendedores, etc): Son las personas que se beneficiarán del producto desarrollado, excluyendo a los empresarios. Los clientes se beneficiarán, ya que al comprarlo, dispondrán de una utilidad nueva, los proveedores y vendedores, conseguiran dinero a través de sus ventas al público.
 
-### Los flujos de trabajo
+## Los flujos de trabajo
+En este apartado explicaremos como se organiza el flujo de trabajo en esta metodología de desarrollo.
+
+### Planificación del sprint
+Todo sprint debe comenzar con una planificación previa de los objetivos a completar.
+
+### Los sprints
+Es el periodo en el que se hace el trabajo de desarrollo, tienen una duración aproximada de 1 a 4 semanas, aunque puede ser mayor o menor, todo depende de las necesidades.
+#### SCRUM diario
+Cada día debe tener lugar una reunión para comprobar el estado del proyecto y que todos los miembros del equipo se pongan al día de todas las actualizaciones de cada compañero. Se señalan problemas y también posibles soluciones.
+
+### Revisión del sprint
+Se debe hacer una reunión donde se presente lo realizado en este ciclo de desarrollo.
+
+### Retrospectiva del sprint
+Es una reunión en la que se pretende que el equipo exprese sus sensaciones de trabajo durante este sprint. La idea es poder seguir implementando mejoras al método de trabajo y hacer sentir bien a los trabajadores.
+
+### [X] Trabajo terminado
+Como en todas las metodologías una vez acabado el desarrollo, se lanzará el producto y este entrará en la fase de mantenimiento.
+
 
 </div>
