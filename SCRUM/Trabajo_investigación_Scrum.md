@@ -64,7 +64,7 @@ Se debe hacer una reunión donde se presente lo realizado en este ciclo de desar
 ### Retrospectiva del sprint
 Es una reunión en la que se pretende que el equipo exprese sus sensaciones de trabajo durante este sprint. La idea es poder seguir implementando mejoras al método de trabajo y hacer sentir bien a los trabajadores.
 
-### - [X] Trabajo terminado
+* [X] Trabajo terminado
 
 Como en todas las metodologías una vez acabado el desarrollo, se lanzará el producto y este entrará en la fase de mantenimiento.
 
