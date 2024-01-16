@@ -72,7 +72,7 @@ Una especificación de casos de uso es una técnica que se usa en Ingeniería de
 #### Condiciones posteriores
 - Una infraestructura que permita desplegar al sistema las indicaciones del administrador en la aplicación de los clientes.
 
-### Login >(include) Verificar credenciales
+### Login
 
 #### Descripción
 - Un Login, será un proceso a través del cual el usuario introducirá sus credenciales personales, para poder entrar a la cuenta correspondiente que tiene registrada.
@@ -80,6 +80,8 @@ Una especificación de casos de uso es una técnica que se usa en Ingeniería de
 
 #### Actores involucrados
 - Usuario
+
+#### Incluye: Verificar credenciales
 
 #### Flujo principal del login
 1. El usuario entrará a la sección de la aplicación donde se realiza la acción del login.
@@ -111,4 +113,68 @@ Una especificación de casos de uso es una técnica que se usa en Ingeniería de
 #### Actores involucrados
 - Usuario
 - Sistema externo de posicionamiento
+
+#### Flujo principal
+1. El usuario accede a la aplicación y en la sección de ajustes permite que se use su ubicación.
+2. En cuanto este, lo acepte se lo conectará a un sistema de geolocalización, que es llevado a cabo por un sistema externo de posicionamiento que se comunica constantemente con el sistema interno de la aplicación aportando los datos de ubicación constantemente.
+3. El usuario, al igual que todo el que tenga permiso para hacerlo, por ser necesario para el correcto funcionamiento de la aplicación podrá ver la ubicación.
+
+#### Condiciones previas
+- Tener desarrollado o contratado un sistema de geolocalización que permita acceder y ordenar los datos de ubicación que el usuario debe proporcionar.
+- Que el usuario se haya registrado y hecho el login en la cuenta.
+- Que el usuario de permiso para acceder a los datos de ubicación de sus dispositivo.
+
+#### Condiciones posteriores
+- El sistema de geolocalización se debe mantener activo constantemente.
+- El usuario no debe revocar los permisos de ubicación, de lo contrario dejará de funcionar.
+
+### Modificar ruta
+
+#### Descripción
+- Esta será una opción dada al usuario, que podrá modificar la ruta en todo momento con los cargos extras que eso pueda conllevar.
+
+#### Actores involucrados
+- Usuario
+
+#### Flujo principal
+1. El usuario ante la necesidad de cambiar la ruta, podrá acceder a la sección de la aplicación correspondiente.
+2. En ella seleccionará que necesita modificar la ruta, introduciendo los nuevos datos de destino requeridos.
+3. El sistema se encargará de transmitir esta información al empleado que deberá modificar la ruta según los nuevos parámetros.
+
+#### Condiciones previas
+- Estar registrado como usuario y hacer login en la cuenta.
+- Un sistema de que permita al usuario modificar los datos iniciales de la base de datos.
+- Un sistema de aviso que indique al empleado el nuevo destino.
+
+#### Condiciones posteriores
+- Que el empleado pueda acceder constantente a los datos de la ruta, para consultarlo cuando sea necesario.
+
+### Definir destino
+
+#### Descripción
+- El usuario deberá indicar el destino al que desea llegar al sistema para que este pueda comunicarse con un empleado que lleve a cabo la tarea de transportar al usuario al destino designado.
+
+#### Actores involucrados
+- Usuario
+
+#### Extiende: Sugerir destinos interesantes
+#### Extiende: Mostrar puntos de interés en ruta
+
+#### Flujo principal
+1. El usuario debe entrar en la sección de seleccionar un nuevo destino.
+2. Elegirá un medio de transporte para su ruta.
+3. Dará al sistema los datos de su ruta.
+4. El sistema guardará esos datos.
+5. El sistema transmite al empleado que considere más adecuado para realizar la labor de transporte, según los parámetros introducidos por el cliente y siguiendo sus propios algoritmos.
+
+#### Flujo alterno y excepciones
+
+#### Condiciones previas
+- El usuario debe estar registrado y logueado en el sistema de la aplicación.
+- Disponer de los medios de transporte que la aplicación muestra disponibles para escoger.
+- Una base de datos de datos de ruta de los usuarios.
+- Algoritmo de comportamiento del sistema al elegir un empleado.
+
+#### Condiciones posteriores
+- Que se permita modificar la ruta a posteriorii, para poder permitir funcionar al caso de uso de modificación de ruta.
 </div>
