@@ -3,8 +3,22 @@
 # <div align="center">CASOS DE USO BIBLIOTECA</div>
 
 ## Actores
-- Usuario
-- Bibliotecario
+
+| Descripción del actor | Usuario |
+| ---                   | ---     |
+| Descripción           | El Usuario es todo aquel que interactua con la aplicación de la biblioteca, para acceder a los servicios que ofrece, la información que alberga y gestionar la que le permita el sistema. |
+| Características       | Interacción con la biblioteca (Reservas, préstamos, devoluciones), Autentificación (Login, Registro, Baja). |
+| Relaciones            | Bibliotecario, Sistema |
+| Referencias           | Perfil personal        |
+| Atributos             | Credenciales de login  |
+
+| Descripción del actor | Bibliotecario |
+| ---                   | ---           |
+| Descripción           | El bibliotecario hace las veces de administrador y encargado de la biblioteca física. |
+| Características       | Interacción con el usuario (Prestar, devolver), gestión de cuentas (Registrar, Dar de baja). |
+| Relaciones            | Usuario, Sistema. |
+| Referencias           | Perfil de administrador |
+| Atributos             | Credenciales de  administrador |
 
 ## Casos de uso
 
@@ -67,5 +81,6 @@
 | Flujo principal     | El usuario entrará a la sección de la aplicación donde se realiza la acción del login. El usuario introduce sus credenciales y confirma el envío de las mismas para ser cotejadas por el sistema. Si los datos coinciden con alguna entrada de la base de datos, se lo dejará entrar con la cuenta asociada a esas credenciales. |
 | Condiciones posteriores | El usuario debe obtener acceso a su cuenta tal y como se dejó la última vez que accedió. |
 | Flujo alterno y excepciones | Si las credenciales introducidas son erróneas, el sistema mostrará un mensaje de error indicando al usuario que sus credenciales no coinciden. El login falla y el usuario debe volver a proporcionar credenciales. |
+| Include | Verificación de credenciales |
  
 </div>
