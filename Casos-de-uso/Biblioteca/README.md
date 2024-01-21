@@ -41,12 +41,31 @@
 ### Registrarse
 | Registro | Biblioteca |
 | ---      | ---        |
-|
+| Actores  | Usuario, Bibliotecario |
+| Descripción | El usuario deberá registrarse en la aplicación para acceder a sus funciones. Por supuesto, el usuario también podrá ser registrado por el bibliotecario, que funcionará a efectos de administrador. |
+| Condiciones previas | Si el usuario se quiere registrar no deberá estar registrado. |
+| Flujo principal     | Se entra en la plataforma de registro. Se introducen los datos solicitados. Se guardan los datos y credenciales en la base de datos. El usuario obtiene acceso a su nueva cuenta. |
+| Condiciones posteriores | El usuario deberá tener acceso a todas las funciones relacionadas a su estatus. |
+| Flujo alterno y excepciones | Si el usuario introduce datos erróneos en el registro se le pedirá que los ingrese de forma correcta. No se puede registrar un usuario que ya está creado. |
 
+### Dar de baja
+| Baja | Biblioteca |
+| ---  | ---        |
+| Actores | Usuario, Bibliotecario |
+| Descripción | Un usuario podrá darse de baja de su cuenta, o el bibliotecario siguiendo tanto los deseos del usuario como siguiendo las directrices de la biblioteca, puede dar de baja a un usuario. |
+| Condiciones previas | Deberá estar registrado el usuario que se quiera dar de baja. |
+| Flujo principal     | Se entra en ajustes, en la sección de borrar cuenta. Se pincha el botón de "eliminar cuenta". Se debe confirmar introduciendo la contraseña de la cuenta. El usuario pierde acceso a la misma, al dejar de existir. |
+| Condiciones posteriores | Se liberará el nombre de usuario, volviendo a poder usarse. |
+| Flujo alterno y excepciones | Si no se introduce bien la contraseña el proceso de eliminación se cancelará y deberá volver a iniciarse. |
 
 ### Login
 | Login | Biblioteca |
 | ---   | ---        |
-
+| Actores | Usuario  |
+| Descripción | El login será la acción de acceder a una cuenta ya creada a través del proporcionamiento al sistema de unas creenciales para su verificación |
+| Condiciones previas | El usuario deberá estar registrado en la aplicación de la biblioteca. Una base de datos que haya guardado las credenciales que se introdujeron durante el registro. |
+| Flujo principal     | El usuario entrará a la sección de la aplicación donde se realiza la acción del login. El usuario introduce sus credenciales y confirma el envío de las mismas para ser cotejadas por el sistema. Si los datos coinciden con alguna entrada de la base de datos, se lo dejará entrar con la cuenta asociada a esas credenciales. |
+| Condiciones posteriores | El usuario debe obtener acceso a su cuenta tal y como se dejó la última vez que accedió. |
+| Flujo alterno y excepciones | Si las credenciales introducidas son erróneas, el sistema mostrará un mensaje de error indicando al usuario que sus credenciales no coinciden. El login falla y el usuario debe volver a proporcionar credenciales. |
  
 </div>
