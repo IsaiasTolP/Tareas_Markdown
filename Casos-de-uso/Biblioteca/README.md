@@ -2,6 +2,10 @@
 
 # <div align="center">CASOS DE USO BIBLIOTECA</div>
 
+## Diagrama de casos de uso
+
+![Caso biblioteca](diagrama.drawio.png)
+
 ## Actores
 
 | Descripción del actor | Usuario |
@@ -68,7 +72,7 @@
 | Actores | Usuario, Bibliotecario |
 | Descripción | Un usuario podrá darse de baja de su cuenta, o el bibliotecario siguiendo tanto los deseos del usuario como siguiendo las directrices de la biblioteca, puede dar de baja a un usuario. |
 | Condiciones previas | Deberá estar registrado el usuario que se quiera dar de baja. |
-| Flujo principal     | Se entra en ajustes, en la sección de borrar cuenta. Se pincha el botón de "eliminar cuenta". Se debe confirmar introduciendo la contraseña de la cuenta. El usuario pierde acceso a la misma, al dejar de existir. |
+| Flujo principal     | Se entra en ajustes, en la sección de borrar cuenta. Se pincha el botón de "eliminar cuenta". Se debe confirmar. El usuario pierde acceso a la misma, al dejar de existir. |
 | Condiciones posteriores | Se liberará el nombre de usuario, volviendo a poder usarse. |
 | Flujo alterno y excepciones | Si no se introduce bien la contraseña el proceso de eliminación se cancelará y deberá volver a iniciarse. |
 
