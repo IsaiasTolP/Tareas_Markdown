@@ -7,14 +7,14 @@
 ## Actores
 | Descripción del actor | Pasajero |
 | ---                   | ---      |
-| Descripción           | |
+| Descripción           | El pasajero será el actor que actue con la aplicación para hacer uso de los servicios de aviación que en ella se ofrecen. |
 | Características       | |
 | Relaciones            | |
 | Atributos             | |
 
 | Descripción del actor | Agente de reservas |
 | ---                   | ---                |
-| Descripción           | |
+| Descripción           | El agente de reservas será aquella persona que atienda y asista al paseajero en su interacción con los servicios que ofrece la aplicación. |
 | Características       | |
 | Relaciones            | |
 | Atributos             | |
