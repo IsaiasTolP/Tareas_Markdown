@@ -57,29 +57,30 @@
 | Comprar | Tienda-online |
 | ---     | ---           |
 | Actores | Usuario       |
-| Descripción | |
-| Condiciones previas     |
-| Flujo principal         |
-| Condiciones posteriores |
-| Flujo alterno o excepciones |
+| Descripción | Esta es la acción principal que realizarán los usuarios en la tienda, que es comprar. |
+| Condiciones previas     | Debe de estar registrado y logueado en la tienda online. |
+| Flujo principal         | |
+| Condiciones posteriores | |
+| Flujo alterno o excepciones | |
 
 ### Ver catálogo
 | Ver catálogo | Tienda-online |
 | ---          | ---           |
 | Actores      | Usuario       |
-| Descripción  | |
-| Condiciones previas          |
-| Flujo principal              |
-| Condiciones posteriores      |
-| Flujo alterno o excepciones  |
+| Descripción  | Esta acción la llevaran a cabo los usuarios en la tienda online para buscar lo que desean ver o comprar. |
+| Condiciones previas          | |
+| Flujo principal              | |
+| Condiciones posteriores      | |
+| Flujo alterno o excepciones  | |
+
 ### Gestionar inventario
 | Gestión inventario | Tienda-online |
 | ---          | ---                 |
 | Actores      | Administrador       |
-| Descripción  | |
-| Condiciones previas          |
-| Flujo principal              |
-| Condiciones posteriores      |
-| Flujo alterno o excepciones  |
+| Descripción  | La gestión de inventario será aquella opción llevada a cabo por el administrador en la cual se subirá a la tienda el stock disponible, productos nuevos o se eliminaran productos descatalogados. |
+| Condiciones previas          | |
+| Flujo principal              | |
+| Condiciones posteriores      | |
+| Flujo alterno o excepciones  | |
 
 </div>
