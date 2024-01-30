@@ -175,20 +175,24 @@
 | Revisión | Red Social |
 | ---      | ---        |
 | Actores  | Administrador |
-| Descripción | |
-| Condiciones previas | |
-| Flujo principal     | |
-| Condiciones posteriores | |
-| Flujo alterno y excepciones | |
-### Eliminación de publicaciones y comentarios
+| Descripción | El administrador deberá revisar manualmente las alertas que le ha mandado el sistema para confirmar si se trata de un contenido prohibido en las políticas de la plataforma. |
+| Condiciones previas | El sistema debe haber detectado contenido que se deba revisar. |
+| Flujo principal     | 1. El administrador entra al sistema. 2. Entra a la lista de las publicaciones pendientes de revisión. 3. Se selecciona una para revisar y se muestran los detalles de la misma. 4. Se decide si se incumple con las políticas y se elimina el contenido. |
+| Condiciones posteriores | Se han tomado las acciones que correspondan. La publicación actualiza su estado en la red social. |
+| Flujo alterno y excepciones | 1. Paso 1: No se puede entrar al sistema si la conexión no es posible. 2. Paso 2: No hay publicaciones que revisar. |
+
+### Control de publicidad
+
+### Eliminación de publicaciones
 | Eliminación | Red Social |
 | ---         | ---        |
-| Actores     | Administrador, Usuario |
-| Descripción | |
-| Condiciones previas | |
-| Flujo principal     | |
-| Condiciones posteriores | |
-| Flujo alterno y excepciones | |
+| Actores     | Usuario |
+| Descripción | La red social está en constante movimiento, por lo que la posibilidad de que borrar contenido es imprescindible. |
+| Condiciones previas | Estar autentificado en el sistema como el usuario que ha hecho la publicación. Debe existir una publicación previa. |
+| Flujo principal     | 1. El usuario inicia sesion (login). 2. Se va a la sección de "Mis publicaciones". 3. Se selecciona la publicación que se quiere eliminar. 4. Se selecciona en la publicación la opción de "eliminar". 5. El sistema elimina la publicación. |
+| Condiciones posteriores | La publicación se ha borrado y ya no es posible acceder a ella, por parte de nadie. |
+| Flujo alterno y excepciones | 1. Paso 5: Si por cualquier error el sistema no puede borrar la publicación se muestra un mensaje de error y no le ocurre nada. |
+
 ### Publicar contenido
 | Publicación | Red Social |
 | ---         | ---        |
@@ -199,7 +203,24 @@
 | Condiciones posteriores | |
 | Flujo alterno y excepciones | |
 
-### Recibir comentario
-
 ### Buscar personas
+| Buscar personas | Red Social |
+| ---             | ---        |
+| Actores         | Usuario |
+| Descripción     | |
+| Condiciones previas | |
+| Flujo principal     | |
+| Condiciones posteriores | |
+| Flujo alterno y excepciones | |
+
+### Seguir personas
+| seguir personas | Red Social |
+| ---             | ---        |
+| Actores         | Usuario |
+| Descripción     | |
+| Condiciones previas | |
+| Flujo principal     | |
+| Condiciones posteriores | |
+| Flujo alterno y excepciones | |
+
 </div>
