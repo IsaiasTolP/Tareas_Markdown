@@ -172,10 +172,32 @@
 </table>
 
 ### Revisión de contenido
-
+| Revisión | Red Social |
+| ---      | ---        |
+| Actores  | Administrador |
+| Descripción | |
+| Condiciones previas | |
+| Flujo principal     | |
+| Condiciones posteriores | |
+| Flujo alterno y excepciones | |
 ### Eliminación de publicaciones y comentarios
-
+| Eliminación | Red Social |
+| ---         | ---        |
+| Actores     | Administrador, Usuario |
+| Descripción | |
+| Condiciones previas | |
+| Flujo principal     | |
+| Condiciones posteriores | |
+| Flujo alterno y excepciones | |
 ### Publicar contenido
+| Publicación | Red Social |
+| ---         | ---        |
+| Actores     | Usuario |
+| Descripción | |
+| Condiciones previas | |
+| Flujo principal     | |
+| Condiciones posteriores | |
+| Flujo alterno y excepciones | |
 
 ### Recibir comentario
 
