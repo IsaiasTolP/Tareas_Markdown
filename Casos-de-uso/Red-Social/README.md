@@ -10,7 +10,7 @@
 | Descrición del actor | Usuario |
 | ---                  | ---     |
 | Descripción          | Los usuarios serán las personas que interactuen entre sí en la red social publicando contenido y comentándolas. |
-| Características      | Interacción con la red social (Publicar, eliminar, comentar, etc). Interacción con el sistema (Registro, baja, login).  |
+| Características      | Interacción con la red social (Publicar, eliminar, etc). Interacción con el sistema (Registro, baja, login). Interacción con usuarios (amigos)  |
 | Relaciones           | Administrador, Sistema. |
 | Referencias          | Perfil de usuario |
 | Atributos            | Credenciales de usuario, Datos del perfil de usuario |
@@ -139,7 +139,7 @@
     </tr>
     <tr>
       <td>Condiciones previas</td>
-      <td>El usuario tiene que estar registrado en la aplicación de reserva de vuelos. Una base de datos debe haber guardado las credenciales que se introdujeron durante el registro.</td>
+      <td>El usuario tiene que estar registrado en la Red social. Una base de datos debe haber guardado las credenciales que se introdujeron durante el registro.</td>
     </tr>
     <tr>
       <td>Flujo principal</td>
@@ -153,7 +153,7 @@
     </tr>
     <tr>
       <td>Condiciones posteriores</td>
-      <td>El usuario debe obtener acceso a su cuenta tal y como se dejó la última vez que accedió.</td>
+      <td>El usuario debe obtener acceso a su cuenta y tener una serie de notificaciones que correspondan a su ausencia.</td>
     </tr>
     <tr>
       <td>Flujo alterno o excepciones</td>
@@ -171,4 +171,13 @@
   </tbody>
 </table>
 
+### Revisión de contenido
+
+### Eliminación de publicaciones y comentarios
+
+### Publicar contenido
+
+### Recibir comentario
+
+### Buscar personas
 </div>
