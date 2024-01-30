@@ -135,7 +135,7 @@
     </tr>
     <tr>
       <td>Condiciones previas</td>
-      <td>El usuario tiene que estar registrado en la aplicación de reserva de vuelos. Una base de datos debe haber guardado las credenciales que se introdujeron durante el registro.</td>
+      <td>El usuario tiene que estar registrado en la aplicación de la tienda. Una base de datos debe haber guardado las credenciales que se introdujeron durante el registro.</td>
     </tr>
     <tr>
       <td>Flujo principal</td>

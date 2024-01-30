@@ -24,6 +24,8 @@
 | Atributos             | Credenciales de administrador |
 
 ## Casos de uso
+
+### Registrarse
 <table>
   <thead>
     <tr>
@@ -67,6 +69,104 @@
           <li><b>Paso 3:</b> No se puede registrar un usuario que ya está creado. Se volverá a la pantalla de registro.</li>
         </ol>
       </td>
+    </tr>
+  </tbody>
+</table>
+
+### Darse de baja
+<table>
+  <thead>
+    <tr>
+      <th>Baja</th>
+      <th>Red Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actores</td>
+      <td>Usuario</td>
+    </tr>
+    <tr>
+      <td>Descripción</td>
+      <td>Un usuario podrá dar de baja su cuenta</td>
+    </tr>
+    <tr>
+      <td>Condiciones previas</td>
+      <td>Deberá estar registrado el usuario que se quiera dar de baja.</td>
+    </tr>
+    <tr>
+      <td>Flujo principal</td>
+      <td>
+        <ol>
+          <li>Se entra en ajustes, en la sección de borrar cuenta.</li>
+          <li>Se pincha el botón de "eliminar cuenta".</li>
+          <li>Se debe confirmar.</li>
+          <li>La cuenta se borra por completo junto con sus datos, publicaciones y comentarios y deja de existir.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>Condiciones posteriores</td>
+      <td> Se liberaran las credenciales de la cuenta puediendo reutilizarse en otras.</td>
+    </tr>
+    <tr>
+      <td>Flujo alterno o excepciones</td>
+      <td>
+        <ol>
+          <li><b>Paso 3:</b> Si el usuario se arrepiente antes de confirmar la eliminación podrá elegir cancelar el proceso.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### Login
+<table>
+  <thead>
+    <tr>
+      <th>Login</th>
+      <th>Red Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actores</td>
+      <td>Usuario</td>
+    </tr>
+    <tr>
+      <td>Descripción</td>
+      <td>El login será la acción de acceder a una cuenta ya creada a través del proporcionamiento al sistema de unas credenciales para su verificación.</td>
+    </tr>
+    <tr>
+      <td>Condiciones previas</td>
+      <td>El usuario tiene que estar registrado en la aplicación de reserva de vuelos. Una base de datos debe haber guardado las credenciales que se introdujeron durante el registro.</td>
+    </tr>
+    <tr>
+      <td>Flujo principal</td>
+      <td>
+        <ol>
+          <li>El usuario tiene que entrar a la sección de la aplicación donde se realiza el login.</li>
+          <li>El usuario indicará sus credenciales y confirma que desea entrar.</li>
+          <li>Se verifican las credenciales y si los datos coinciden con el usuario de la cuenta, se le permite entrar.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>Condiciones posteriores</td>
+      <td>El usuario debe obtener acceso a su cuenta tal y como se dejó la última vez que accedió.</td>
+    </tr>
+    <tr>
+      <td>Flujo alterno o excepciones</td>
+      <td>
+        <ol>
+          <li><b>Paso 3:</b> Si las credenciales introducidas son erróneas, el sistema mostrará un mensaje de error indicando al usuario que sus credenciales no coinciden.</li>
+          <li><b>Paso 3:</b> El login falla y el usuario debe volver a proporcionar credenciales.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>Include</td>
+      <td>Verificación de credenciales</td>
     </tr>
   </tbody>
 </table>
