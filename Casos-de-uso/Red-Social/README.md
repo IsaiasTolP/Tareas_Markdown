@@ -172,55 +172,289 @@
 </table>
 
 ### Revisión de contenido
-| Revisión | Red Social |
-| ---      | ---        |
-| Actores  | Administrador |
-| Descripción | El administrador deberá revisar manualmente las alertas que le ha mandado el sistema para confirmar si se trata de un contenido prohibido en las políticas de la plataforma. |
-| Condiciones previas | El sistema debe haber detectado contenido que se deba revisar. |
-| Flujo principal     | 1. El administrador entra al sistema. 2. Entra a la lista de las publicaciones pendientes de revisión. 3. Se selecciona una para revisar y se muestran los detalles de la misma. 4. Se decide si se incumple con las políticas y se elimina el contenido. |
-| Condiciones posteriores | Se han tomado las acciones que correspondan. La publicación actualiza su estado en la red social. |
-| Flujo alterno y excepciones | 1. Paso 1: No se puede entrar al sistema si la conexión no es posible. 2. Paso 2: No hay publicaciones que revisar. |
+<table>
+  <thead>
+    <tr>
+      <th>Revisión</th>
+      <th>Red Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actores</td>
+      <td>Administrador</td>
+    </tr>
+    <tr>
+      <td>Descripción</td>
+      <td>El administrador deberá revisar manualmente las alertas que le ha mandado el sistema para confirmar si se trata de un contenido prohibido en las políticas de la plataforma.</td>
+    </tr>
+    <tr>
+      <td>Condiciones previas</td>
+      <td>El sistema debe haber detectado contenido que se deba revisar.</td>
+    </tr>
+    <tr>
+      <td>Flujo principal</td>
+      <td>
+        <ol>
+          <li>El administrador entra al sistema.</li>
+          <li>Entra a la lista de las publicaciones pendientes de revisión.</li>
+          <li>Se selecciona una para revisar y se muestran los detalles de la misma.</li>
+          <li>Se decide si se incumple con las políticas y se elimina el contenido.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>Condiciones posteriores</td>
+      <td>Se han tomado las acciones que correspondan. La publicación actualiza su estado en la red social.</td>
+    </tr>
+    <tr>
+      <td>Flujo alterno o excepciones</td>
+      <td>
+        <ol>
+          <li><b>Paso 1:</b> No se puede entrar al sistema si la conexión no es posible.</li>
+          <li><b>Paso 2:</b> No hay publicaciones que revisar.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 ### Control de publicidad
+<table>
+  <thead>
+    <tr>
+      <th>Control publicitario</th>
+      <th>Red Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actores</td>
+      <td>Administrador</td>
+    </tr>
+    <tr>
+      <td>Descripción</td>
+      <td>El administrador debe controlar qué se promociona en la red social y qué no.</td>
+    </tr>
+    <tr>
+      <td>Condiciones previas</td>
+      <td>Debe existir un panel de control para la administración de la publicidad.</td>
+    </tr>
+    <tr>
+      <td>Flujo principal</td>
+      <td>
+        <ol>
+          <li>El administrador entra al panel de control de publicidad.</li>
+          <li>Se revisan los anuncios que se solicitan colocar en la red social.</li>
+          <li>Se aprueban o rechazan los anuncios.</li>
+          <li>Se programan los anuncios aprobados para su publicación.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>Condiciones posteriores</td>
+      <td>Los anuncios aprobados y publicados se deberán mostrar a los usuarios.</td>
+    </tr>
+    <tr>
+      <td>Flujo alterno o excepciones</td>
+      <td>
+        <ol>
+          <li><b>Paso 3:</b> Un anuncio será rechazado si se incumple la ley o las políticas de la red social.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Eliminación de publicaciones
-| Eliminación | Red Social |
-| ---         | ---        |
-| Actores     | Usuario |
-| Descripción | La red social está en constante movimiento, por lo que la posibilidad de que borrar contenido es imprescindible. |
-| Condiciones previas | Estar autentificado en el sistema como el usuario que ha hecho la publicación. Debe existir una publicación previa. |
-| Flujo principal     | 1. El usuario inicia sesion (login). 2. Se va a la sección de "Mis publicaciones". 3. Se selecciona la publicación que se quiere eliminar. 4. Se selecciona en la publicación la opción de "eliminar". 5. El sistema elimina la publicación. |
-| Condiciones posteriores | La publicación se ha borrado y ya no es posible acceder a ella, por parte de nadie. |
-| Flujo alterno y excepciones | 1. Paso 5: Si por cualquier error el sistema no puede borrar la publicación se muestra un mensaje de error y no le ocurre nada. |
+<table>
+  <thead>
+    <tr>
+      <th>Eliminación</th>
+      <th>Red Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actores</td>
+      <td>Usuario</td>
+    </tr>
+    <tr>
+      <td>Descripción</td>
+      <td>La red social está en constante movimiento, por lo que la posibilidad de borrar contenido es imprescindible.</td>
+    </tr>
+    <tr>
+      <td>Condiciones previas</td>
+      <td>Estar autentificado en el sistema como el usuario que ha hecho la publicación. Debe existir una publicación previa.</td>
+    </tr>
+    <tr>
+      <td>Flujo principal</td>
+      <td>
+        <ol>
+          <li>El usuario inicia sesión (login).</li>
+          <li>Se va a la sección de "Mis publicaciones".</li>
+          <li>Se selecciona la publicación que se quiere eliminar.</li>
+          <li>Se selecciona en la publicación la opción de "eliminar".</li>
+          <li>El sistema elimina la publicación.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>Condiciones posteriores</td>
+      <td>La publicación se ha borrado y ya no es posible acceder a ella, por parte de nadie.</td>
+    </tr>
+    <tr>
+      <td>Flujo alterno o excepciones</td>
+      <td>
+        <ol>
+          <li><b>Paso 5:</b> Si por cualquier error el sistema no puede borrar la publicación se muestra un mensaje de error y no le ocurre nada.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Publicar contenido
-| Publicación | Red Social |
-| ---         | ---        |
-| Actores     | Usuario |
-| Descripción | Los usuarios interactuaran con la red social publicando contenido. |
-| Condiciones previas | Estar previamente registrado. Haber iniciado sesión en una cuenta. |
-| Flujo principal     | 1. Se llega hasta la página de inicio. 2. Se selecciona la opción de publicar. 3. Se introduce el contenido de lo que se va a publicar. 4. Se selecciona "compartir". 5. La red social publica el contenido. |
-| Condiciones posteriores | La publicación es visible a los usuarios permitidos para verla. |
-| Flujo alterno y excepciones | 1. Paso 5: Si el contenido se detecta como prohibido por la red social no se publicará. |
+<table>
+  <thead>
+    <tr>
+      <th>Publicación</th>
+      <th>Red Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actores</td>
+      <td>Usuario</td>
+    </tr>
+    <tr>
+      <td>Descripción</td>
+      <td>Los usuarios interactuarán con la red social publicando contenido.</td>
+    </tr>
+    <tr>
+      <td>Condiciones previas</td>
+      <td>Estar previamente registrado. Haber iniciado sesión en una cuenta.</td>
+    </tr>
+    <tr>
+      <td>Flujo principal</td>
+      <td>
+        <ol>
+          <li>Se llega hasta la página de inicio.</li>
+          <li>Se selecciona la opción de publicar.</li>
+          <li>Se introduce el contenido de lo que se va a publicar.</li>
+          <li>Se selecciona "compartir".</li>
+          <li>La red social publica el contenido.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>Condiciones posteriores</td>
+      <td>La publicación es visible a los usuarios permitidos para verla.</td>
+    </tr>
+    <tr>
+      <td>Flujo alterno o excepciones</td>
+      <td>
+        <ol>
+          <li><b>Paso 5:</b> Si el contenido se detecta como prohibido por la red social no se publicará.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Buscar personas
-| Buscar personas | Red Social |
-| ---             | ---        |
-| Actores         | Usuario |
-| Descripción     | |
-| Condiciones previas | |
-| Flujo principal     | |
-| Condiciones posteriores | |
-| Flujo alterno y excepciones | |
+<table>
+  <thead>
+    <tr>
+      <th>Buscar personas</th>
+      <th>Red Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actores</td>
+      <td>Usuario</td>
+    </tr>
+    <tr>
+      <td>Descripción</td>
+      <td>El usuario tiene que tener la posibilidad de buscar personas con las que interactuar en la red social.</td>
+    </tr>
+    <tr>
+      <td>Condiciones previas</td>
+      <td>Estar registrado y logueado en la red social.</td>
+    </tr>
+    <tr>
+      <td>Flujo principal</td>
+      <td>
+        <ol>
+          <li>El usuario entra en la sección de búsqueda.</li>
+          <li>Se introducen los criterios de búsqueda.</li>
+          <li>Se muestra una lista de resultados en base a estos criterios.</li>
+          <li>Se selecciona el perfil que se quiera de la lista de resultados.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>Condiciones posteriores</td>
+      <td>Se encuentra el perfil deseado y se abre el perfil para ver más detalles.</td>
+    </tr>
+    <tr>
+      <td>Flujo alterno o excepciones</td>
+      <td>
+        <ol>
+          <li><b>Paso 3:</b> Si no hay resultados la red social muestra un mensaje indicando esto mismo.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Seguir personas
-| seguir personas | Red Social |
-| ---             | ---        |
-| Actores         | Usuario |
-| Descripción     | |
-| Condiciones previas | |
-| Flujo principal     | |
-| Condiciones posteriores | |
-| Flujo alterno y excepciones | |
+
+<table>
+  <thead>
+    <tr>
+      <th>seguir personas</th>
+      <th>Red Social</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actores</td>
+      <td>Usuario</td>
+    </tr>
+    <tr>
+      <td>Descripción</td>
+      <td>Los usuarios tendrán la posibilidad de seguir a otros usuarios para ver las publicaciones de estas personas.</td>
+    </tr>
+    <tr>
+      <td>Condiciones previas</td>
+      <td>Estar registrado y logueado. Se debe haber hecho una búsqueda de usuarios para ver a quién se quiere seguir.</td>
+    </tr>
+    <tr>
+      <td>Flujo principal</td>
+      <td>
+        <ol>
+          <li>Se visita el perfil de la persona que se quiere seguir.</li>
+          <li>El usuario pulsa la opción de "seguir".</li>
+          <li>El sistema lo confirma y se le da el estatus de seguido a ese perfil.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>Condiciones posteriores</td>
+      <td>El usuario que ha seguido a otro deberá recibir las actualizaciones sobre las publicaciones del usuario seguido.</td>
+    </tr>
+    <tr>
+      <td>Flujo alterno o excepciones</td>
+      <td>
+        <ol>
+          <li><b>Paso 2:</b> Si ocurre un error al seguir a otro usuario se informa al usuario de que no ha sido posible y lo intente un poco más tarde.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
