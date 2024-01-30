@@ -197,11 +197,11 @@
 | Publicación | Red Social |
 | ---         | ---        |
 | Actores     | Usuario |
-| Descripción | |
-| Condiciones previas | |
-| Flujo principal     | |
-| Condiciones posteriores | |
-| Flujo alterno y excepciones | |
+| Descripción | Los usuarios interactuaran con la red social publicando contenido. |
+| Condiciones previas | Estar previamente registrado. Haber iniciado sesión en una cuenta. |
+| Flujo principal     | 1. Se llega hasta la página de inicio. 2. Se selecciona la opción de publicar. 3. Se introduce el contenido de lo que se va a publicar. 4. Se selecciona "compartir". 5. La red social publica el contenido. |
+| Condiciones posteriores | La publicación es visible a los usuarios permitidos para verla. |
+| Flujo alterno y excepciones | 1. Paso 5: Si el contenido se detecta como prohibido por la red social no se publicará. |
 
 ### Buscar personas
 | Buscar personas | Red Social |
