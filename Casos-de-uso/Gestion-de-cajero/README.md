@@ -7,7 +7,7 @@
 ## Actores
 | Descripción del actor | Administrador |
 | ---                   | ---           |
-| Descripción           | El administrador será la persona que se encargue de revisar que la aplicación funcione del cajero funcione de forma correcta en todo momento. |
+| Descripción           | El administrador será la persona que se encargue de revisar y administrar el cajero. |
 | Características       | |
 | Relaciones            | |
 | Referencias           | |
@@ -15,11 +15,22 @@
 
 | Descripción del actor | Cliente bancario |
 | ---                   | ---              |
-| Descripción           | El cliente bancario será el usuario de la aplicación que accederá a las funciones para hacer gestiones y movimientos de dinero. |
+| Descripción           | El cliente bancario será el usuario de la aplicación que tiene una cuenta en el banco y que accederá a las funciones del cajero para hacer gestiones y movimientos de dinero. |
 | Características       | |
 | Relaciones            | |
 | Referencias           | |
 | Atributos             | Credenciales bancarias |
 
 ## Casos de uso
+
+### Login
+| Login | Cajero |
+| ---   | ---    |
+| Actores | Cliente |
+| Descripción | |
+| Condiciones previas | |
+| Flujo principal | |
+| Condiciones posteriores | |
+| Flujo alterno o excepciones | |
+
 </div>
