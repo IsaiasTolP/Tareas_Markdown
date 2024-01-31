@@ -332,7 +332,7 @@
       <td>Este caso de uso será el que se asegure de que los usuarios reciben una buena experiencia en la tienda y que se solucionen los problemas que puedan surgir a los usuarios.</td>
     </tr>
     <tr>
-      <td>Precondiciones</td>
+      <td>Condiciones previas</td>
       <td>El administrador debe estar en horario de consulta. El usuario tiene un problema que requiere de resolución.</td>
     </tr>
     <tr>
@@ -348,7 +348,7 @@
       </td>
     </tr>
     <tr>
-      <td>Postcondiciones</td>
+      <td>Condiciones posteriores</td>
       <td>El problema se ha arreglado y el usuario ha quedado satisfecho/a.</td>
     </tr>
     <tr>
