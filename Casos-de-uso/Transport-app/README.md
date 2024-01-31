@@ -2,16 +2,72 @@
 
 # <div align="center">El login como caso de uso</div>
 
-| Casos de Uso | Transport App |
-| ---          | ---           |
-| Caso | Login | 
-| Actores | Usuario |
-| Descripción | Un Login, será un proceso a través del cual el usuario introducirá sus credenciales personales, para poder entrar a la cuenta correspondiente que tiene registrada. |
-| Incluye | Verificación de credenciales |
-| Condiciones previas | El usuario debe tener conexión a internet para conectarse. El usuario debe tener cerrada la sesión en su cuenta. Una página específica de login plenamente funcional, a la que puedan entrar usuarios desconectados. El usuario debe haberse registrado en la aplicación si pretende entrar. Una base de datos que permita consultar al sistema las credenciales introducidas. |
-| Condiciones posteriores | El usuario debe obtener acceso a su cuenta tal y como se dejó la última vez que accedió. Debe haber un tiempo máximo de inactividad del usuario y tras el cual se cierre la sesión en la cuenta. |
-| Flujo principal | El usuario entrará a la sección de la aplicación donde se realiza la acción del login. El usuario introduce sus credenciales y confirma el envío de las mismas para ser cotejadas por el sistema. Si los datos coinciden con alguna entrada de la base de datos, se lo dejará entrar con la cuenta asociada a esas credenciales. |
-| Flujo alterno o excepciones | Si las credenciales introducidas son erróneas, el sistema mostrará un mensaje de error indicando al usuario que sus credenciales no coinciden. El login falla y el usuario debe volver a proporcionar credenciales. |
+<table>
+  <thead>
+    <tr>
+      <th>Casos de Uso</th>
+      <th>Transport App</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Caso</td>
+      <td>Login</td>
+    </tr>
+    <tr>
+      <td>Actores</td>
+      <td>Usuario</td>
+    </tr>
+    <tr>
+      <td>Descripción</td>
+      <td>Un Login, será un proceso a través del cual el usuario introducirá sus credenciales personales, para poder entrar a la cuenta correspondiente que tiene registrada.</td>
+    </tr>
+    <tr>
+      <td>Incluye</td>
+      <td>Verificación de credenciales</td>
+    </tr>
+    <tr>
+      <td>Condiciones previas</td>
+      <td>
+        <ul>
+          <li>El usuario debe tener conexión a internet para conectarse.</li>
+          <li>El usuario debe tener cerrada la sesión en su cuenta.</li>
+          <li>Una página específica de login plenamente funcional, a la que puedan entrar usuarios desconectados.</li>
+          <li>El usuario debe haberse registrado en la aplicación si pretende entrar.</li>
+          <li>Una base de datos que permita consultar al sistema las credenciales introducidas.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Condiciones posteriores</td>
+      <td>
+        <ul>
+          <li>El usuario debe obtener acceso a su cuenta tal y como se dejó la última vez que accedió.</li>
+          <li>Debe haber un tiempo máximo de inactividad del usuario y tras el cual se cierre la sesión en la cuenta.</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Flujo principal</td>
+      <td>
+        <ol>
+          <li>El usuario entrará a la sección de la aplicación donde se realiza la acción del login.</li>
+          <li>El usuario introduce sus credenciales y confirma el envío de las mismas para ser cotejadas por el sistema.</li>
+          <li>Si los datos coinciden con alguna entrada de la base de datos, se lo dejará entrar con la cuenta asociada a esas credenciales.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td>Flujo alterno o excepciones</td>
+      <td>
+        <ol>
+          <li><b>Paso 3:</b> Si las credenciales introducidas son erróneas, el sistema mostrará un mensaje de error indicando al usuario que sus credenciales no coinciden.</li>
+          <li><b>Paso 2:</b> El login falla y el usuario debe volver a proporcionar credenciales.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 # <div align="center">El usuario como actor</div>
 
