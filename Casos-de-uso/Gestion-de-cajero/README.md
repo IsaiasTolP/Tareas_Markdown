@@ -23,7 +23,25 @@
 
 ## Casos de uso
 
-### Config
+### Configurar cajero
+| Configuración | Cajero |
+| ---           | ---    |
+| Descripción   | Administrador |
+| Condiciones previos | |
+| Flujo principal | |
+| Condiciones posteriores | |
+| Flujo alterno o excepciones | |
+
+### Atención al cliente
+| Configuración | Cajero |
+| ---           | ---    |
+| Actores       | Administrador, Usuario |
+| Descripción   | |
+| Condiciones previos | |
+| Flujo principal | |
+| Condiciones posteriores | |
+| Flujo alterno o excepciones | |
+
 ### Login
 | Login | Cajero |
 | ---   | ---    |
@@ -34,6 +52,34 @@
 | Condiciones posteriores | El cliente ha accedido a su cuenta bancaria. |
 | Flujo alterno o excepciones | 1. Paso 3: Si el PIN es incorrecto se debe volver a introducir y se avisa al cliente del límite de intentos antes de bloquear la tarjeta. |
 
-###
+### Ingresar dinero
+| Ingresar | Cajero |
+| ---           | ---    |
+| Actores       | Usuario |
+| Descripción   | |
+| Condiciones previos | |
+| Flujo principal | |
+| Condiciones posteriores | |
+| Flujo alterno o excepciones | |
+
+### Retirar dinero
+| Retirar | Cajero |
+| ---           | ---    |
+| Actores       | Usuario |
+| Descripción   | |
+| Condiciones previos | |
+| Flujo principal | |
+| Condiciones posteriores | |
+| Flujo alterno o excepciones | |
+
+### Transferir dinero
+| Transferir | Cajero |
+| ---           | ---    |
+| Actores       | Usuario |
+| Descripción   | |
+| Condiciones previos | |
+| Flujo principal | |
+| Condiciones posteriores | |
+| Flujo alterno o excepciones | |
 
 </div>
