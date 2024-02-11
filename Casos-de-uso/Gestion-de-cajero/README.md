@@ -75,7 +75,7 @@
 <table>
   <thead>
     <tr>
-      <th>Configuración</th>
+      <th>Atención</th>
       <th>Cajero</th>
     </tr>
   </thead>
