@@ -52,6 +52,7 @@
         <ol>
           <li>Se entra en la plataforma de registro.</li>
           <li>Se introducen los datos solicitados.</li>
+          <li>Se comprueba la validez de los datos.</li>
           <li>Se guardan los datos y credenciales en la base de datos.</li>
           <li>El usuario obtiene acceso a su nueva cuenta.</li>
         </ol>
