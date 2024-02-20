@@ -244,6 +244,7 @@
           <li>Se selecciona la opción de búsqueda en el catálogo.</li>
           <li>El sistema muestra los productos listados en el catálogo, con varias características como nombre, precio, categoría, etc.</li>
           <li>El usuario puede navegar libremente por el catálogo filtrando y ordenando los productos que hay en el mismo.</li>
+          <li>Se cierra el catálogo</li>
         </ol>
       </td>
     </tr>
