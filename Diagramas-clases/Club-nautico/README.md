@@ -7,6 +7,6 @@ Es necesario que un socio pase por una compra para poseer un amarre de ahí que 
 
 Además, es importante poner una tabla intermedia entre zona y empleado, que nos relacione ambas tablas de forma correctas, ya que pueden trabajar muchos empleado en una zona al igual que un empleado puede trabajar en varias zonas.
 
-![Diagrama](Diagrama.drawio.png)
+![Diagrama](Diagrama-club.drawio.png)
 
 </div>
