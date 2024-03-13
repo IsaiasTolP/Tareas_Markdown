@@ -2,4 +2,6 @@
 
 # <div align="center">Diagrama de Clases Club Náutico</div>
 
+![Diagrama](Diagrama.drawio.png)
+
 </div>
