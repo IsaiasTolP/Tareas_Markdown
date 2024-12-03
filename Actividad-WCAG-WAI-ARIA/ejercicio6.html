@@ -4,12 +4,16 @@
   <title>Notificaciones</title>
   <script>
     function mostrarNotificacion() {
-      document.getElementById('notificacion').innerText = 'Cambio guardado';
+      const notificacion = document.getElementById('notificacion');
+      notificacion.innerText = 'Cambio guardado';
+      notificacion.setAttribute('role', 'alert');
+      notificacion.setAttribute('aria-live', 'assertive');
+      notificacion.focus();
     }
   </script>
 </head>
 <body>
   <button onclick="mostrarNotificacion()">Guardar</button>
-  <div id="notificacion"></div>
+  <div id="notificacion" tabindex="-1" aria-live="polite" style="margin-top: 10px;"></div>
 </body>
 </html>

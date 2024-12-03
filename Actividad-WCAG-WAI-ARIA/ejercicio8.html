@@ -13,12 +13,22 @@
 </head>
 <body>
   <h1>Menú</h1>
-  <div class="menu">
+  <div class="menu" tabindex="0" aria-haspopup="true" aria-expanded="false" id="menu">
     Opciones
-    <div class="submenu">
-      <p>Opción 1</p>
-      <p>Opción 2</p>
+    <div class="submenu" aria-label="Submenú" id="submenu">
+      <p tabindex="0">Opción 1</p>
+      <p tabindex="0">Opción 2</p>
     </div>
   </div>
+  <script>
+    const menu = document.getElementById('menu');
+
+    menu.addEventListener('mouseenter', function() {
+      menu.setAttribute('aria-expanded', 'true')
+    });
+    menu.addEventListener('mouseleave', function() {
+      menu.setAttribute('aria-expanded', 'false')
+    });
+  </script>
 </body>
 </html>
