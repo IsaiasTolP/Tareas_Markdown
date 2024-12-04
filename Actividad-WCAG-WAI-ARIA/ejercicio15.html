@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Menú Interactivo</title>
+  <title>Menú Interactivo Accesible</title>
   <style>
     .submenu {
       display: none;
     }
-    .menu:hover .submenu {
-      display: block;
+    .menu {
+      background-color: red;
+      width: fit-content;
+      padding: 10px;
     }
   </style>
 </head>
 <body>
   <h1>Menú de Opciones</h1>
-  <div class="menu">
-    <p>Opciones</p>
-    <div class="submenu">
-      <p>Opción 1</p>
-      <p>Opción 2</p>
-      <p>Opción 3</p>
-    </div>
-  </div>
+  <nav>
+    <ul>
+      <li type="none">
+        <div aria-haspopup="true" aria-expanded="false" class="menu">
+          <span>Opciones</span>
+        </div>
+        <ul aria-hidden="true" class="submenu">
+          <li><a href="#opcion1">Opción 1</a></li>
+          <li><a href="#opcion2">Opción 2</a></li>
+          <li><a href="#opcion3">Opción 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <script>
+    const menu = document.querySelector('.menu');
+    const submenu = document.querySelector('.submenu');
+    const nav = document.querySelector('nav');
+
+    menu.addEventListener('mouseenter', function() {
+      const isExpanded = menu.getAttribute('aria-expanded') === 'true';
+      menu.setAttribute('aria-expanded', !isExpanded);
+      menu.setAttribute('aria-hidden', isExpanded);
+      submenu.setAttribute('aria-hidden', isExpanded);
+      submenu.style.display = 'block';
+    });
+    nav.addEventListener('mouseleave', function() {
+      const isExpanded = menu.getAttribute('aria-expanded') === 'true';
+      menu.setAttribute('aria-expanded', !isExpanded);
+      menu.setAttribute('aria-hidden', isExpanded);
+      submenu.setAttribute('aria-hidden', isExpanded);
+      submenu.style.display = 'none';
+    });
+  </script>
 </body>
 </html>

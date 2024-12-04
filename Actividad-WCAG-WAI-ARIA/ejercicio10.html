@@ -4,13 +4,21 @@
   <title>Notificaciones</title>
   <script>
     function mostrarMensaje() {
-      document.getElementById('mensaje').innerText = '¡Nueva notificación!';
-    }
+      const mensajeDiv = document.getElementById('mensaje');
+      mensajeDiv.innerText = '¡Nueva notificación!';
+      mensajeDiv.style.display = 'block';
+      mensajeDiv.setAttribute('role', 'alert');
+      mensajeDiv.focus();
+  }
   </script>
 </head>
 <body>
-  <h1>Página de Notificaciones</h1>
-  <button onclick="mostrarMensaje()">Mostrar Notificación</button>
-  <div id="mensaje"></div>
+  <header>
+    <h1>Página de Notificaciones</h1>
+  </header>
+  <main>
+    <button onclick="mostrarMensaje()">Mostrar Notificación</button>
+    <div id="mensaje" tabindex="-1" aria-live="assertive"></div>
+  </main>
 </body>
 </html>

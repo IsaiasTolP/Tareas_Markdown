@@ -15,18 +15,26 @@
       color: white;
       padding: 10px;
       cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .boton:focus {
+      outline: 2px solid orange;
     }
   </style>
 </head>
 <body>
-  <div>
+  <header>
     <h1>Zapatos Deportivos</h1>
-    <div>
-      <img src="zapatos.jpg">
-      <p>Los mejores zapatos para correr.</p>
-      <p class="precio">Precio: $50</p>
-    </div>
-    <div class="boton" onclick="alert('Producto añadido al carrito')">Añadir al carrito</div>
-  </div>
+  </header>
+  <main>
+    <section aria-labelledby="producto-titulo">
+      <img src="zapatos.jpg" alt="Zapatos deportivos de color azul" />
+      <p id="producto-titulo">Los mejores zapatos para correr.</p>
+      <p aria-label="Precio del producto">Precio: <span class="precio">$50</span></p>
+      <button class="boton" aria-label="Añadir el producto al carrito de compra" onclick="alert('Producto añadido al carrito')">Añadir al carrito</button>
+    </section>
+  </main>
 </body>
 </html>
